@@ -17,7 +17,7 @@ def run():
 
     jobs = downloader.download_jobs()
     members = downloader.download_members()
-    engine = recommendation.factory_engine('dummy')
+    engine = recommendation.factory_engine('keyword')
     recommendation_map = engine.go(members, jobs)
     formatter.print_output(recommendation_map)
 

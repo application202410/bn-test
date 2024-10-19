@@ -12,6 +12,10 @@ class Job:
         self.title = title
         self.location = location
 
+        # derived data, set by parsers etc.
+        self.is_internship = False
+        self.category = None
+
     @classmethod
     def factory(cls, json_obj):
         # TODO: I'm assuming this is a trusted internal API so we don't need
