@@ -29,6 +29,12 @@ class Member:
         self.name = name
         self.bio = bio
 
+    def requires_internship(self):
+        return 'internship' in self.bio.lower()
+
+    def bio_lc(self):
+        return self.bio.lower()
+
     @classmethod
     def factory(cls, json_obj):
         # TODO: Same as in Job.
