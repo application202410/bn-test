@@ -112,11 +112,11 @@ class KeyWordMatcherEngine:
         intership_only = member.requires_internship()
         available_locations = set([job.location.lower() for job in jobs])
 
-        return [job for job in jobs if all([
-            self.filter_internship(member, intership_only, job),
-            self.filter_category(member, job),
-            self.filter_location(available_locations, member, job)
-        ])]
+        return [job for job in jobs if
+                self.filter_internship(member, intership_only, job)
+                and self.filter_category(member, job)
+                and self.filter_location(available_locations, member, job)
+                ]
 
 
 def factory_engine(name):
