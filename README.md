@@ -22,6 +22,21 @@ I've reviewed enough developer tests to know how much I appreciate decent, clear
 
 This feels like a good balance between simplicity of use and setup.
 
+### General project structure
+Whilst there's an appeal to showing off here and splitting the project into multiple pieces - e.g. a Recommendation API that ingests data and responds to POST requests for individual people, I think that's probably outside the scope of this task.
+
+Keeping a clear focus on the end goal, I'm going to have:
+- A main executable script
+- A downloader that does all the outwards requests and parses data
+- An interchangeable recommendations engine
+    - This will take all the parsed data and returns a map of Person->Jobs.
+    - Interchangeable so I can play around with different versions as drop-in replacements.
+- A formatter that takes the mapped recommendations and writes output
+    - This could e.g. write to a DB, serialise to JSON, etc.
+    - But here it will simply print to console.
+- Tests
+    - I'm not going to work towards 100% coverage, given time constraints but will write tests mainly to help me as I write new code.
+
 
  ## Discussion
 
