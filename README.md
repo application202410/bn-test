@@ -37,6 +37,10 @@ Keeping a clear focus on the end goal, I'm going to have:
 - Tests
     - I'm not going to work towards 100% coverage, given time constraints but will write tests mainly to help me as I write new code.
 
+### Download and parse phase
+I've kept this very simple and not really added much error handling or validation. Even with the presumption that this is a trusted, internal API, there really ought to be _some_ handling of errors. I've not spent any time doing that here - these will simply fall over if the input data is broken.
+
+
 
  ## Discussion
 
