@@ -19,7 +19,7 @@ python main.py
 
 
 ## Approach
-The brief (and my conversation) stressed the need to keep this simple, so I'm going to start by getting all the basics done, build and the recommendation algorithm and then see how much time I have left to play with it and improve it.
+The brief and stressed that this should be kept simple, so I'm going to start by getting all the basics done, build the recommendation algorithm and then see how much time I have left to play with it and improve it.
 
 I've divided this into a few key tasks:
 - Project setup and basic 'Hello World' run instructions
