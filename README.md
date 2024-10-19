@@ -41,6 +41,8 @@ Keeping a clear focus on the end goal, I'm going to have:
 I've kept this very simple and not really added much error handling or validation. Even with the presumption that this is a trusted, internal API, there really ought to be _some_ handling of errors. I've not spent any time doing that here - these will simply fall over if the input data is broken.
 
 
+### Output
+As per the brief, this is very simple. I've split it out as a 'formatter' so that it could be easily replaced by something more sophisticated but not done anything more clever than that. this implementation simply loops through the members and prints out an alphabetical list of jobs for them. 
 
  ## Discussion
 
